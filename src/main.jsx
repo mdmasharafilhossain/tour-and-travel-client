@@ -9,6 +9,7 @@ import {
 import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
 import Service from './Components/Service/Service';
+import Login from './Components/Login/Login';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
        {
         path:"/dashboard",
         
+       },
+       {
+        path:"/login",
+        element:<Login></Login>
        }
 
 

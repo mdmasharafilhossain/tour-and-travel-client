@@ -1,28 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/t-01-01.jpg'
 
 const Header = () => {
 
     const NavLinks = <>
         <li><NavLink
-            to="/" style={{ fontWeight: "bold", fontSize: "25px",}}
+            to="/" style={{ fontWeight: "bold", fontSize: "25px", }}
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline" : ""
+                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
             }
         >
             Home
         </NavLink></li>
         <li><NavLink
-            to="/service" style={{ fontWeight: "bold", fontSize: "25px",}}
+            to="/service" style={{ fontWeight: "bold", fontSize: "25px", }}
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline" : ""
+                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
             }
         >
             Service
         </NavLink></li>
 
         <details className="dropdown">
-            <summary className="m-1  text-2xl  font-bold  hover:none">DashBoard</summary>
+            <summary className="m-1  text-2xl   font-bold  hover:none">DashBoard</summary>
             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                 <li><a>My-Services</a></li>
                 <li><a>Add-Services</a></li>
@@ -46,7 +46,7 @@ const Header = () => {
                                 {NavLinks}
                             </ul>
                         </div>
-                       <img className="h-10" src={logo} alt="" />
+                        <img className="h-10" src={logo} alt="" />
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -54,7 +54,8 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn">Login</a>
+                        <Link to="/login"><button className=" text-orange-600 border-4 border-orange-500
+                                        hover:bg-orange-100 font-bold text-xl px-4 py-2 rounded-xl">Sign In</button></Link>
                     </div>
                 </div>
             </div>

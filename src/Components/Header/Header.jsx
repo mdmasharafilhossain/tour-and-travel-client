@@ -1,7 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/t-01-01.jpg'
+import { useContext } from "react";
+import { AuthContext } from "../AuthProviders/AuthProviders";
 
 const Header = () => {
+    const { user, LogOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        LogOut()
+            .then()
+            .catch()
+    }
 
     const NavLinks = <>
         <li><NavLink
@@ -53,9 +62,32 @@ const Header = () => {
                             {NavLinks}
                         </ul>
                     </div>
-                    <div className="navbar-end">
-                        <Link to="/login"><button className=" text-orange-600 border-4 border-orange-500
-                                        hover:bg-orange-100 font-bold text-xl px-4 py-2 rounded-xl">Sign In</button></Link>
+                    <div className="navbar-end flex">
+
+                        <div>
+                            <h2 className="mt-4 text-xl font-bold text-orange-600-600">{user?.displayName
+
+                            }</h2>
+                        </div>
+                        <div>
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full mt-3">
+                                        <img src={user?.photoURL} />
+                                    </div>
+                                </label>
+                        </div>
+                        <div>
+                            {
+                                user ?
+                                    <button onClick={handleLogOut} className=" text-orange-600 border-4 border-orange-500
+                        hover:bg-orange-100 font-bold text-xl px-4 py-2 rounded-xl">Sign Out</button>
+
+                                    :
+
+                                    <Link to="/login"><button className=" text-orange-600 border-4 border-orange-500
+                        hover:bg-orange-100 font-bold text-xl px-4 py-2 rounded-xl">Sign In</button></Link>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

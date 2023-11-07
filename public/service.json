@@ -1,0 +1,56 @@
+[
+    {
+      "service_image": "https://i.ibb.co/qkdCf4S/s1.jpg",
+      "service_name": "Cox's Bazar Tour",
+      "service_description": "Cox's Bazar is a coastal town in southeastern Bangladesh, renowned for having the world's longest natural sea beach, stretching for approximately 120 kilometers. This picturesque destination attracts tourists with its stunning views of the Bay of Bengal, offering opportunities for beach activities and water sports. It is also home to Himchari National Park, which features diverse flora and fauna. Cox's Bazar is a popular destination for both local and international travelers, making it a hub for tourism in Bangladesh.",
+      "service_provider_image": "https://i.ibb.co/Z8M4SWM/comment-people-2.png",
+      "service_provider_name": "Mashrafil",
+      "service_price": 50.99,
+      "service_area": "Cox's Bazar"
+    },
+    {
+      "service_image": "https://i.ibb.co/NKr55CX/s2.jpg",
+      "service_name": "Sylhet Tour",
+      "service_description": "Stylet Tour is a leading travel agency known for curating unforgettable travel experiences. With a focus on luxury and personalized service, Stylet Tour offers tailored itineraries, from exotic getaways to cultural adventures. Their expert team ensures travelers enjoy comfort and exclusivity. Whether it's a relaxing beach escape, an adventurous expedition, or a cultural immersion, Stylet Tour delivers exceptional journeys, creating lasting memories for every traveler.",
+      "service_provider_image": "https://i.ibb.co/Cs2cLjg/comment-people-5.png",
+      "service_provider_name": "Mahi",
+      "service_price": 35.50,
+      "service_area": "Sylhet"
+    },
+    {
+      "service_image": "https://i.ibb.co/PNqmVpx/s3.jpg",
+      "service_name": "Rangamati Tour",
+      "service_description": "Rangamati, located in the Chittagong Hill Tracts of Bangladesh, offers a breathtaking journey through lush green hills, serene lakes, and indigenous culture. Tourists can explore the scenic Kaptai Lake by boat, visit tribal villages, and enjoy the tranquility of the hills. The region's unique blend of natural beauty and cultural diversity makes Rangamati an enchanting destination for those seeking an escape into the heart of Bangladesh's hillside paradise.",
+      "service_provider_image": "https://i.ibb.co/g4zJ7q7/comment-people-1.png",
+      "service_provider_name": "Hemal",
+      "service_price": 499.99,
+      "service_area": "Chittagong Division"
+    },
+    {
+      "service_image": "https://i.ibb.co/NyKSP4Y/s4.jpg",
+      "service_name": "Bandarban",
+      "service_description": "Bandarban, located in southeastern Bangladesh, offers a captivating eco-tourism experience. With its lush green hills, serene waterfalls, and indigenous tribal culture, it's a haven for nature enthusiasts. Treks to places like Boga Lake and Nilgiri Hills provide breathtaking views, while exploring tribal villages like Chimbuk and Ruma reveals unique customs. Bandarban promises an immersive adventure amidst picturesque landscapes and rich cultural diversity.",
+      "service_provider_image": "https://i.ibb.co/Z8M4SWM/comment-people-2.png",
+      "service_provider_name": "Rahat",
+      "service_price": 75.00,
+      "service_area": "Chittagong Division."
+    },
+    {
+      "service_image": "https://i.ibb.co/8xZ8tGN/s5.jpg",
+      "service_name": "Sonargaon",
+      "service_description": "Sonargaon, located in Bangladesh, is a historically significant destination for cultural and historical tourism. Known as the ancient capital of Bengal, it features well-preserved archaeological sites, traditional architecture, and museums, offering visitors a glimpse into the rich history of the region. The Sonargaon Folk Art and Craft Museum and ancient Panam City are notable attractions, showcasing the art, crafts, and heritage of the area. Tourists can explore the heritage of Bangladesh while enjoying the tranquility of this historical town.",
+      "service_provider_image": "https://i.ibb.co/Cs2cLjg/comment-people-5.png",
+      "service_provider_name": "Kowshik",
+      "service_price": 65.00,
+      "service_area": " Narayanganj"
+    },
+    {
+      "service_image": "https://i.ibb.co/Wp5pBWv/s6.jpg",
+      "service_name": "The Sundarbans",
+      "service_description": "The Sundarbans, located in Bangladesh and India, is a UNESCO World Heritage Site known for its unique mangrove forest ecosystem. A Sundarbans tour offers a captivating experience of diverse wildlife, including the endangered Bengal tiger. Visitors explore dense mangrove forests, tidal waterways, and numerous bird species. The region's culture and traditional boat tours provide a glimpse into the daily lives of local communities. It's a one-of-a-kind adventure in a breathtaking natural setting.",
+      "service_provider_image": "https://i.ibb.co/g4zJ7q7/comment-people-1.png",
+      "service_provider_name": "Asif",
+      "service_price": 25.99,
+      "service_area": "Khulna"
+    }
+  ]

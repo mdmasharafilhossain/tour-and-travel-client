@@ -19,7 +19,7 @@ const SerV = ({ serv }) => {
                 <div className="card-body">
                     <h2 className="card-title text-center font-bold text-2xl text-orange-600">{service_name}</h2>
                     <p className="text-justify">{des} <button className="text-base font-bold text-orange-600">View Details</button></p>
-                    <div className="flex mt-5">
+                    <div className="flex  mt-5">
                         <div>
                            <img  className="h-10" src={service_provider_image} alt="" />
                         </div>

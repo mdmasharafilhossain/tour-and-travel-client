@@ -1,4 +1,5 @@
 
+import AboutUs from "../AboutUS/AboutUs";
 import Customer from "../Customer/Customer";
 import Footer from "../Footer/Footer";
 import HomeService from "../HomeService/HomeService";
@@ -8,6 +9,7 @@ const Home = () => {
     return (
         <div className="mt-16">
            <Banner></Banner>
+           <AboutUs></AboutUs>
            <HomeService></HomeService>
            <Customer></Customer>
            <Footer></Footer>

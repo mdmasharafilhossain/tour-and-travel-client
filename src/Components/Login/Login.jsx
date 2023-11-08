@@ -2,10 +2,12 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../AuthProviders/AuthProviders";
-
+import { GoogleAuthProvider, getAuth } from "firebase/auth";
+import app from "../../FireBase/FireBase";
+const auth = getAuth(app);
 
 const Login = () => {
-    const {SignIn} = useContext(AuthContext)
+    const {SignIn,SignInWithGoogle} = useContext(AuthContext)
     const [errorMessage, setErrorMessage] = useState('');
     const handleLogin = e =>{
 
@@ -28,8 +30,21 @@ const Login = () => {
           console.error(error);
           setErrorMessage(error.message)
   
-        })
+        });
+        
     }
+
+    const hadleGoogleLogin = e =>{
+        const googleProvider = new GoogleAuthProvider();
+        e.preventDefault();
+        SignInWithGoogle(auth,googleProvider)
+        .then(result=>{
+            console.log(result);
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+      }
     return (
         <div>
              <div className=" py-60">
@@ -60,7 +75,7 @@ const Login = () => {
                     </div>
                 </form>
                 <p className="font-bold mt-5 text-xl text-orange-500">OR</p>
-                {/* <button onClick={hadleGoogleLogin} className="btn btn-primary bg-green-700 hover:bg-green-900 text-white">Google Login</button> */}
+                <button onClick={hadleGoogleLogin} className="btn btn-primary bg-orange-700 border-none mt-10 hover:bg-orange-900 text-white">Google Login</button>
                 {
                     errorMessage && <p className="text-sm font-bold text-red-700">{errorMessage}</p>
                 }

@@ -5,7 +5,7 @@ const Special = () => {
         <div>
             <div className="">
             <h2 className="text-center text-orange-600   text-5xl font-bold mt-20 ">What Makes Us Special?</h2>
-            <div className="flex border-2 border-orange-600 py-20 mt-10 flex-col md:flex-row lg:flex-row gap-20 shadow-lg justify-center">
+            <div className="flex border-2 border-orange-600 py-20 mt-10 flex-col md:flex-row lg:flex-row lg:gap-20 shadow-lg justify-center">
                 <div className="text-center">
                    <img className="mx-auto" src="https://i.ibb.co/b2H9mdx/logo1.png" alt="" />
                     <h1 className="font-bold text-2xl">Local Expert Guides</h1>

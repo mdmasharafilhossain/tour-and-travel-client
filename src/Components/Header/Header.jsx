@@ -29,8 +29,10 @@ const Header = () => {
         >
             Service
         </NavLink></li>
-
-        <details className="dropdown">
+         {
+            user? 
+            <>
+              <details className="dropdown">
             <summary className="m-1  text-2xl   font-bold  hover:none">DashBoard</summary>
             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                 <li><NavLink
@@ -59,6 +61,11 @@ const Header = () => {
         </NavLink></li>
             </ul>
         </details>
+            </>
+            : 
+           ""
+         }
+       
 
 
     </>

@@ -19,7 +19,7 @@ const HomeService = () => {
     return (
         <div className="">
             <h2 className="text-center text-orange-600   text-5xl font-bold mt-20 my-10">Our Services</h2>
-            <div className="grid grid-cols-1  mx-20   mt-20 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1  lg:mx-20   mt-20 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {
                 card.slice(0,4).map(cards =><ServiceCard key={cards._id} cards={cards}></ServiceCard> )
             }

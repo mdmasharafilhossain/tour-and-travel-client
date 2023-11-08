@@ -2,12 +2,12 @@
 import { signInWithPopup } from 'firebase/auth';
 const AboutUs = () => {
     return (
-        <div className="mx-20">
+        <div className="lg:mx-20">
             <h2 className="text-center text-orange-600   text-5xl font-bold mt-20 ">About Us</h2>
             <h1 className="text-center text-lg mt-5 mb-10">
                 Welcome to Travel. your gateway to unforgettable travel experiences. We are a passionate team of adventurers, explorers, and travel enthusiasts who have come together to curate exceptional journeys for you. Our mission is simple: to provide you with the most memorable and enriching travel experiences possible.
             </h1>
-            <div className="flex flex-col md:flex-row lg:flex-row flex-1">
+            <div className="flex flex-col md:flex-col lg:flex-row flex-1">
                 <div>
                     <img src="https://i.ibb.co/TPVc2fh/2-840x473.jpg" alt="" />
                 </div>

@@ -26,56 +26,56 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
-       {
-        path:"/",
-        element:<Home></Home>
-       },
-       {
-        path:"/service",
-        element:<Service></Service>
-        
-       },
-       {
-        path:"/dashboard",
-        
-       },
-       {
-        path:"/login",
-        element:<Login></Login>
-       },
-       {
-        path:"/register",
-        element:<Register></Register>
-       },
-       {
-        path:"/serviceDetails/:_id",
-        element:<PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
-        loader:()=> fetch('http://localhost:5000/service')
-       },
-       {
-             path:"service/serviceDetails/service/:_id",
-             element:<PrivateRoutes><ServiceD></ServiceD></PrivateRoutes>,
-             loader:()=> fetch('http://localhost:5000/service')
-       },
+      {
+        path: "/",
+        element: <Home></Home>
+      },
+      {
+        path: "/service",
+        element: <Service></Service>
+
+      },
+      {
+        path: "/dashboard",
+
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
+      },
+      {
+        path: "/serviceDetails/:_id",
+        element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
+        loader: () => fetch('https://tour-and-travel-server.vercel.app/service')
+      },
+      {
+        path: "service/serviceDetails/service/:_id",
+        element: <PrivateRoutes><ServiceD></ServiceD></PrivateRoutes>,
+        loader: () => fetch('https://tour-and-travel-server.vercel.app/service')
+      },
       //  {
       //   path:"/MyService",
       //   element:<Myservice></Myservice>,
-      //   loader:()=> fetch('http://localhost:5000/service')
+      //   loader:()=> fetch('https://tour-and-travel-server-f4rryndr0.vercel.app/')
       //  },
-       {
-        path:"/AddService",
-        element:<PrivateRoutes><AddService></AddService></PrivateRoutes>
-       },
-       {
-        path:"/MyService",
-        element:<PrivateRoutes><MyService></MyService></PrivateRoutes>
-       },
-       {
-        path:"/MySchedules",
-        element:<PrivateRoutes><MySchedule></MySchedule></PrivateRoutes>
-       }
+      {
+        path: "/AddService",
+        element: <PrivateRoutes><AddService></AddService></PrivateRoutes>
+      },
+      {
+        path: "/MyService",
+        element: <PrivateRoutes><MyService></MyService></PrivateRoutes>
+      },
+      {
+        path: "/MySchedules",
+        element: <PrivateRoutes><MySchedule></MySchedule></PrivateRoutes>
+      }
 
 
 

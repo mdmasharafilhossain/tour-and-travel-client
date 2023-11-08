@@ -30,7 +30,7 @@ const AddService = () => {
             service_provider_image:ServiceProviderImage              
         }
         console.log(AddNewService);
-        fetch('http://localhost:5000/service',{
+        fetch('https://tour-and-travel-server.vercel.app/service',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

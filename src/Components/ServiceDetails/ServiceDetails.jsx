@@ -29,7 +29,7 @@ const ServiceDetails = () => {
 
         const BookProducts = {name,ServiceEmail,UserEmail,Price,date,Image,Instruction}
         console.log(BookProducts);
-        fetch('http://localhost:5000/bookings',{
+        fetch('https://tour-and-travel-server.vercel.app/bookings',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

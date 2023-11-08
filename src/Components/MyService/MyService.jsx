@@ -9,7 +9,7 @@ const MyService = () => {
       },[]);
     // const [Pera,setService] = useState([]);
     // const {user } = useContext(AuthContext);
-    // const url = `http://localhost:5000/service/${user?.email}`;
+    // const url = `https://tour-and-travel-server-f4rryndr0.vercel.app//${user?.email}`;
     //  console.log(user.email)
     // useEffect(()=>{
     //     axios.get(url)

@@ -8,7 +8,7 @@ const Service = () => {
       },[]);
     const [card,setCard] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://tour-and-travel-server.vercel.app/service')
         .then(res=>res.json())
         .then(data=>setCard(data))
     },[])

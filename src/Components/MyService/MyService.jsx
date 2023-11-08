@@ -1,13 +1,24 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../AuthProviders/AuthProviders";
+import axios from "axios";
 
 
 const MyService = () => {
-    const [service,setService] = useState([]);
-    const {user } = useContext(AuthContext);
-    const url = `http://localhost:5000/service/${user?.email}`
+    // const [Pera,setService] = useState([]);
+    // const {user } = useContext(AuthContext);
+    // const url = `http://localhost:5000/service/${user?.email}`;
+    //  console.log(user.email)
+    // useEffect(()=>{
+    //     axios.get(url)
+    //     .then((res)=>{
+    //         setService(res.data)
+    //     })
+    //     .catch((error) => {
+    //         console.error("Error fetching data:", error);
+    //     });
+    // },[])
 
-    
+    // console.log(Pera)
     return (
         <div>
             <h1>dd</h1>

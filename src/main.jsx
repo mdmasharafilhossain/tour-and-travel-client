@@ -19,6 +19,7 @@ import AddService from './Components/AddService/AddService';
 import MySchedule from './Components/MySchedule/MySchedule';
 import SerV from './Components/SerV/SerV';
 import ServiceD from './Components/ServiceD/ServiceD';
+import MyService from './Components/MyService/MyService';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
        {
         path:"/AddService",
         element:<AddService></AddService>
+       },
+       {
+        path:"/MyService",
+        element:<MyService></MyService>
        },
        {
         path:"/MySchedules",

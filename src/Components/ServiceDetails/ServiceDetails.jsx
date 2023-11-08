@@ -37,7 +37,12 @@ const ServiceDetails = () => {
         .then(data => {
             console.log(data);
             if(data.insertedId){
-                alert("booking Successfully")
+                Swal.fire({
+                    title: 'Book',
+                    text: 'Booking Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                  })
             }
         })
     }

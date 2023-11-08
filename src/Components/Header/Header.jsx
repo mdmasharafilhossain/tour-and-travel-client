@@ -33,9 +33,30 @@ const Header = () => {
         <details className="dropdown">
             <summary className="m-1  text-2xl   font-bold  hover:none">DashBoard</summary>
             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                <li><a>My-Services</a></li>
-                <li><a>Add-Services</a></li>
-                <li><a>My-Schedules</a></li>
+                <li><NavLink
+            to="/MyService" style={{ fontWeight: "bold", fontSize: "15px", }}
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+            }
+        >
+             My-services
+        </NavLink></li>
+                <li><NavLink
+            to="/AddService" style={{ fontWeight: "bold", fontSize: "15px", }}
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+            }
+        >
+             Add-services
+        </NavLink></li>
+                <li><NavLink
+            to="/MySchedules" style={{ fontWeight: "bold", fontSize: "15px", }}
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+            }
+        >
+            My-schedules
+        </NavLink></li>
             </ul>
         </details>
 

@@ -36,7 +36,7 @@ const Header = () => {
                 <li><NavLink
             to="/MyService" style={{ fontWeight: "bold", fontSize: "15px", }}
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+                isPending ? "pending" : isActive ? "text-orange-600 " : ""
             }
         >
              My-services
@@ -44,7 +44,7 @@ const Header = () => {
                 <li><NavLink
             to="/AddService" style={{ fontWeight: "bold", fontSize: "15px", }}
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+                isPending ? "pending" : isActive ? "text-orange-600 " : ""
             }
         >
              Add-services
@@ -52,7 +52,7 @@ const Header = () => {
                 <li><NavLink
             to="/MySchedules" style={{ fontWeight: "bold", fontSize: "15px", }}
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+                isPending ? "pending" : isActive ? "text-orange-600 " : ""
             }
         >
             My-schedules

@@ -14,6 +14,9 @@ import Register from './Components/Register/Register';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AuthProviders from './Components/AuthProviders/AuthProviders';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
+import Myservice from './Components/MyService/Myservice';
+import AddService from './Components/AddService/AddService';
+import MySchedule from './Components/MySchedule/MySchedule';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +49,18 @@ const router = createBrowserRouter([
         path:"/serviceDetails/:_id",
         element:<ServiceDetails></ServiceDetails>,
         loader:()=> fetch('http://localhost:5000/service')
+       },
+       {
+        path:"/MyService",
+        element:<Myservice></Myservice>
+       },
+       {
+        path:"/AddService",
+        element:<AddService></AddService>
+       },
+       {
+        path:"/MySchedules",
+        element:<MySchedule></MySchedule>
        }
 
 

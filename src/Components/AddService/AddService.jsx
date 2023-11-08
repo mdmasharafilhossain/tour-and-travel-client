@@ -9,13 +9,23 @@ const AddService = () => {
         const form = e.target;
         const name = user?.displayName;
         const UserEmail = user?.email;
+        const ServiceProviderImage = user?.photoURL;
         const ServiceName = form.serviceName.value;
        const Price = form.price.value;
         const Des = form.des.value;
         const ServiceArea = form.area.value;
         const Image = form.img.value;
 
-        const AddNewService = {name,UserEmail,ServiceName,Price,Des,ServiceArea,Image}
+        const AddNewService = {
+            service_provider_name:name,
+            service_email:UserEmail,
+            service_name:ServiceName,
+            service_price:Price,
+            service_description:Des,
+            service_area:ServiceArea,
+            service_image:Image,
+            service_provider_image:ServiceProviderImage              
+        }
         console.log(AddNewService);
         fetch('http://localhost:5000/service',{
             method: 'POST',

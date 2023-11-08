@@ -21,7 +21,7 @@ const ServiceCard = ({cards}) => {
                     <p className="text-justify">{des} <Link to={`serviceDetails/${_id}`}><button className="text-base font-bold text-orange-600">View Details</button></Link></p>
                     <div className="flex  mt-5">
                         <div>
-                           <img  className="h-10" src={service_provider_image} alt="" />
+                           <img  className="h-10 w-12" src={service_provider_image} alt="" />
                         </div>
                         <div>
                             <h1 className="ml-3  mt-2 text-orange-600 font-bold">{service_provider_name}</h1>

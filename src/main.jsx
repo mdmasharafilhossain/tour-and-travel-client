@@ -20,6 +20,7 @@ import MySchedule from './Components/MySchedule/MySchedule';
 import SerV from './Components/SerV/SerV';
 import ServiceD from './Components/ServiceD/ServiceD';
 import MyService from './Components/MyService/MyService';
+import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
 
 const router = createBrowserRouter([
   {
@@ -50,12 +51,12 @@ const router = createBrowserRouter([
        },
        {
         path:"/serviceDetails/:_id",
-        element:<ServiceDetails></ServiceDetails>,
+        element:<PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
         loader:()=> fetch('http://localhost:5000/service')
        },
        {
              path:"service/serviceDetails/service/:_id",
-             element:<ServiceD></ServiceD>,
+             element:<PrivateRoutes><ServiceD></ServiceD></PrivateRoutes>,
              loader:()=> fetch('http://localhost:5000/service')
        },
       //  {
@@ -65,15 +66,15 @@ const router = createBrowserRouter([
       //  },
        {
         path:"/AddService",
-        element:<AddService></AddService>
+        element:<PrivateRoutes><AddService></AddService></PrivateRoutes>
        },
        {
         path:"/MyService",
-        element:<MyService></MyService>
+        element:<PrivateRoutes><MyService></MyService></PrivateRoutes>
        },
        {
         path:"/MySchedules",
-        element:<MySchedule></MySchedule>
+        element:<PrivateRoutes><MySchedule></MySchedule></PrivateRoutes>
        }
 
 

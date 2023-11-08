@@ -13,6 +13,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AuthProviders from './Components/AuthProviders/AuthProviders';
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
        {
         path:"/register",
         element:<Register></Register>
+       },
+       {
+        path:"/serviceDetails/:_id",
+        element:<ServiceDetails></ServiceDetails>,
+        loader:()=> fetch('http://localhost:5000/service')
        }
 
 

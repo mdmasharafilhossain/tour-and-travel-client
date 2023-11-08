@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProviders/AuthProviders";
 import { updateProfile } from "firebase/auth";
@@ -6,6 +6,9 @@ import Swal from "sweetalert2";
 
 
 const Register = () => {
+    useEffect(()=>{
+        document.title = "Register"
+      },[]);
     const { createUser } = useContext(AuthContext);
     const [errorMessage, setErrorMessage] = useState('');
 

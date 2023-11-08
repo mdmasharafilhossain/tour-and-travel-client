@@ -3,6 +3,9 @@ import SerV from "../SerV/SerV";
 
 
 const Service = () => {
+    useEffect(()=>{
+        document.title = "Service"
+      },[]);
     const [card,setCard] = useState([]);
     useEffect(()=>{
         fetch('http://localhost:5000/service')

@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import {  useLoaderData, useParams } from "react-router-dom";
 import { AuthContext } from "../AuthProviders/AuthProviders";
 import Swal from "sweetalert2";
 
 
 const ServiceDetails = () => {
+    useEffect(()=>{
+        document.title = "Service Details"
+      },[]);
     const { user } = useContext(AuthContext);
     const CardsInfo = useLoaderData();
     console.log(CardsInfo);

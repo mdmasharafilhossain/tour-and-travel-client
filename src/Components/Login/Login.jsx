@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../AuthProviders/AuthProviders";
@@ -7,6 +7,9 @@ import app from "../../FireBase/FireBase";
 const auth = getAuth(app);
 
 const Login = () => {
+    useEffect(()=>{
+        document.title = "Login"
+      },[]);
     const {SignIn,SignInWithGoogle} = useContext(AuthContext)
     const [errorMessage, setErrorMessage] = useState('');
     const handleLogin = e =>{

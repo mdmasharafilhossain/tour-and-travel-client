@@ -1,8 +1,11 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../AuthProviders/AuthProviders";
 import Swal from "sweetalert2";
 
 const AddService = () => {
+    useEffect(()=>{
+        document.title = "Add Service"
+      },[]);
     const { user } = useContext(AuthContext);
     const handleAddService = e =>{
         e.preventDefault();

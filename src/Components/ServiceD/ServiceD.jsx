@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../AuthProviders/AuthProviders";
 import { useLoaderData, useParams } from "react-router-dom";
 
 
 const ServiceD = () => {
+    useEffect(()=>{
+        document.title = "Service Details"
+      },[]);
     const { user } = useContext(AuthContext);
     const CardsInfo = useLoaderData();
     console.log(CardsInfo);
@@ -13,6 +16,7 @@ const ServiceD = () => {
 
 
     const handleBookProduct = e =>{
+       
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;

@@ -4,6 +4,9 @@ import axios from "axios";
 
 
 const MyService = () => {
+    useEffect(()=>{
+        document.title = "My Service"
+      },[]);
     // const [Pera,setService] = useState([]);
     // const {user } = useContext(AuthContext);
     // const url = `http://localhost:5000/service/${user?.email}`;

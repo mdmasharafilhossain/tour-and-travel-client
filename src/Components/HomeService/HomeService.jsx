@@ -7,7 +7,7 @@ const HomeService = () => {
     const [card,setCard] = useState([]);
     const [showButton, setShowButton] = useState(true);
     useEffect(()=>{
-        fetch('https://tour-and-travel-server.vercel.app/')
+        fetch('https://tour-and-travel-server-czvxnqy0j.vercel.app/service')
         .then(res=>res.json())
         .then(data=>setCard(data))
     },[]);

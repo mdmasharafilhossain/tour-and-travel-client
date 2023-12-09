@@ -1,5 +1,5 @@
 
-# Features
+### Features
 
 - You can show many card with some details like image,category and category name
 - By clicking the button you can full details of the card
@@ -13,9 +13,17 @@
 - You can show your photo and name in navbar section after login
 - You can also book service from Our website
 
-## 🔗 Links
+### 🔗 Links
 
-- live site link
+- live site link : https://travel-and-tour-86fbe.web.app/
+- client side code link : https://github.com/mdmasharafilhossain/tour-and-travel-client
+- server side code link :https://github.com/mdmasharafilhossain/tour-and-travel-server
 
-https://travel-and-tour-86fbe.web.app/
+
+### Technology use
+- HTML 
+- Tailwind 
+- React 
+- Node.js
+- Mongodb
 

@@ -4,27 +4,27 @@ import axios from "axios";
 
 
 const MyService = () => {
-    useEffect(()=>{
-        document.title = "My Service"
-      },[]);
-    // const [Pera,setService] = useState([]);
-    // const {user } = useContext(AuthContext);
-    // const url = `https://tour-and-travel-server-f4rryndr0.vercel.app//${user?.email}`;
-    //  console.log(user.email)
+    
     // useEffect(()=>{
-    //     axios.get(url)
-    //     .then((res)=>{
-    //         setService(res.data)
-    //     })
-    //     .catch((error) => {
-    //         console.error("Error fetching data:", error);
-    //     });
-    // },[])
+    //     document.title = "My Service"
+    //   },[]);
+    const [Pera,setService] = useState([]);
+    const {user} = useContext(AuthContext)
+    const url = `http://localhost:5000/service/search/${user?.email}`;
+     console.log(user.email)
+    useEffect(()=>{
+        axios.get(url).then((res)=>{
+            setService(res.data)
+        })
+        .catch((error) => {
+            console.error("Error fetching data:", error);
+        });
+    },[url])
 
-    // console.log(Pera)
+    console.log(Pera)
     return (
-        <div>
-            <h1>dd</h1>
+        <div className="mt-20">
+           <h1>length :{Pera.length}</h1>
         </div>
     );
 };

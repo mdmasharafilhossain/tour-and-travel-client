@@ -12,8 +12,9 @@ const ServiceD = () => {
     const CardsInfo = useLoaderData();
     console.log(CardsInfo);
     const { _id } = useParams();
+    
     const InfoCard = CardsInfo.find(brand => brand._id === _id);
-
+    console.log(InfoCard);
 
     const handleBookProduct = e =>{
        

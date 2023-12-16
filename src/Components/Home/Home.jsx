@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import HomeService from "../HomeService/HomeService";
 import Special from "../Special/Special";
 import Banner from "./Banner/Banner";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
     useEffect(()=>{
@@ -18,6 +19,7 @@ const Home = () => {
            <Special></Special>
            <HomeService></HomeService>
            <Customer></Customer>
+           <Contact></Contact>
            <Footer></Footer>
         </div>
     );

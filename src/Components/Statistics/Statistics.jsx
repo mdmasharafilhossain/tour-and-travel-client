@@ -14,7 +14,7 @@ const Statistics = () => {
         .then(data=>setCard(data))
     },[]);
     const url = `https://tour-and-travel-server-czvxnqy0j.vercel.app/service/search/${user?.email}`;
-    console.log(user.email)
+    console.log(user?.email);
    useEffect(()=>{
        axios.get(url).then((res)=>{
            setService(res.data)

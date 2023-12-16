@@ -13,7 +13,7 @@ const Statistics = () => {
         .then(res=>res.json())
         .then(data=>setCard(data))
     },[]);
-    const url = `http://localhost:5000/service/search/${user?.email}`;
+    const url = `https://tour-and-travel-server-czvxnqy0j.vercel.app/service/search/${user?.email}`;
     console.log(user.email)
    useEffect(()=>{
        axios.get(url).then((res)=>{

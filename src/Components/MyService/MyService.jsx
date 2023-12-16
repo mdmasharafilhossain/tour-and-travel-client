@@ -10,7 +10,7 @@ const MyService = () => {
     //   },[]);
     const [Pera,setService] = useState([]);
     const {user} = useContext(AuthContext)
-    const url = `http://localhost:5000/service/search/${user?.email}`;
+    const url = `https://tour-and-travel-server-czvxnqy0j.vercel.app/service/search/${user?.email}`;
      console.log(user.email)
     useEffect(()=>{
         axios.get(url).then((res)=>{
@@ -19,7 +19,8 @@ const MyService = () => {
         .catch((error) => {
             console.error("Error fetching data:", error);
         });
-    },[url])
+    },[url]);
+
 
     console.log(Pera)
     return (

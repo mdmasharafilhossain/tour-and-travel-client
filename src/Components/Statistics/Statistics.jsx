@@ -5,6 +5,9 @@ import { Chart } from "react-google-charts";
 import { AuthContext } from "../AuthProviders/AuthProviders";
 
 const Statistics = () => {
+    useEffect(()=>{
+        document.title = "Travel | Statistics"
+      },[]);
     const [card,setCard] = useState([]);
     const [service,setService] = useState([]);
     const {user} = useContext(AuthContext)

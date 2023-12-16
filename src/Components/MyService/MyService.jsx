@@ -5,9 +5,9 @@ import axios from "axios";
 
 const MyService = () => {
     
-    // useEffect(()=>{
-    //     document.title = "My Service"
-    //   },[]);
+    useEffect(()=>{
+        document.title = "Travel | My Service"
+      },[]);
     const [Pera,setService] = useState([]);
     const {user} = useContext(AuthContext)
     const url = `https://tour-and-travel-server-czvxnqy0j.vercel.app/service/search/${user?.email}`;

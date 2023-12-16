@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const MySchedule = () => {
     useEffect(()=>{
-        document.title = "My Schedule"
+        document.title = "Travel | My Schedule"
       },[]);
     return (
         <div>

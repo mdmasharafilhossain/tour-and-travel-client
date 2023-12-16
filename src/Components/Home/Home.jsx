@@ -10,7 +10,7 @@ import Contact from "../Contact/Contact";
 
 const Home = () => {
     useEffect(()=>{
-      document.title = "Home"
+      document.title = "Travel | Home"
     },[]);
     return (
         <div className="mt-16">

@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const AddService = () => {
     useEffect(()=>{
-        document.title = "Add Service"
+        document.title = "Travel | Add Service"
       },[]);
     const { user } = useContext(AuthContext);
     const handleAddService = e =>{

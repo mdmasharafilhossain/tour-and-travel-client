@@ -4,7 +4,7 @@ import SerV from "../SerV/SerV";
 
 const Service = () => {
     useEffect(()=>{
-        document.title = "Service"
+        document.title = "Travel | Service"
       },[]);
     const [card,setCard] = useState([]);
     useEffect(()=>{

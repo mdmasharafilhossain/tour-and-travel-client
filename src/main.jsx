@@ -21,6 +21,7 @@ import SerV from './Components/SerV/SerV';
 import ServiceD from './Components/ServiceD/ServiceD';
 import MyService from './Components/MyService/MyService';
 import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
+import Statistics from './Components/Statistics/Statistics';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+         path:"/statistics",
+         element:<Statistics></Statistics>
       },
       {
         path: "/serviceDetails/:_id",

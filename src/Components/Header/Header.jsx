@@ -61,6 +61,14 @@ const Header = () => {
         </NavLink></li>
             </ul>
         </details>
+        <li><NavLink
+            to="/statistics" style={{ fontWeight: "bold", fontSize: "25px", }}
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-orange-600 " : ""
+            }
+        >
+            Statistics
+        </NavLink></li>
             </>
             : 
            ""

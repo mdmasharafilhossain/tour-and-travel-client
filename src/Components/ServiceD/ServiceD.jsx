@@ -31,7 +31,7 @@ const ServiceD = () => {
 
         const BookProducts = {name,ServiceEmail,UserEmail,Price,date,Image,Instruction}
         console.log(BookProducts);
-        fetch('https://tour-and-travel-server-czvxnqy0j.vercel.app/bookings',{
+        fetch('https://tour-and-travel-server.vercel.app/bookings',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

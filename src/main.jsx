@@ -57,12 +57,12 @@ const router = createBrowserRouter([
       {
         path: "/serviceDetails/:_id",
         element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
-        loader: () => fetch('https://tour-and-travel-server-czvxnqy0j.vercel.app/service')
+        loader: () => fetch('https://tour-and-travel-server.vercel.app/service')
       },
       {
         path: "service/serviceDetails/service/:_id",
         element: <PrivateRoutes><ServiceD></ServiceD></PrivateRoutes>,
-        loader: () => fetch('https://tour-and-travel-server-czvxnqy0j.vercel.app/service')
+        loader: () => fetch('https://tour-and-travel-server.vercel.app/service')
       },
       //  {
       //   path:"/MyService",

@@ -12,11 +12,11 @@ const Statistics = () => {
     const [service,setService] = useState([]);
     const {user} = useContext(AuthContext)
     useEffect(()=>{
-        fetch('https://tour-and-travel-server-czvxnqy0j.vercel.app/service')
+        fetch('https://tour-and-travel-server.vercel.app/service')
         .then(res=>res.json())
         .then(data=>setCard(data))
     },[]);
-    const url = `https://tour-and-travel-server-czvxnqy0j.vercel.app/service/search/${user?.email}`;
+    const url = `https://tour-and-travel-server.vercel.app/service/search/${user?.email}`;
     console.log(user?.email);
    useEffect(()=>{
        axios.get(url).then((res)=>{

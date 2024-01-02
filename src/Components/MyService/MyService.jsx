@@ -8,9 +8,9 @@ const MyService = () => {
     useEffect(()=>{
         document.title = "Travel | My Service"
       },[]);
-    const [Pera,setService] = useState([]);
+    const [Service,setService] = useState([]);
     const {user} = useContext(AuthContext)
-    const url = `https://tour-and-travel-server-czvxnqy0j.vercel.app/service/search/${user?.email}`;
+    const url = `http://localhost:5000/service/search/${user?.email}`;
      console.log(user.email)
     useEffect(()=>{
         axios.get(url).then((res)=>{
@@ -22,10 +22,10 @@ const MyService = () => {
     },[url]);
 
 
-    console.log(Pera)
+    console.log(Service)
     return (
         <div className="mt-20">
-           <h1>length :{Pera.length}</h1>
+           <h1>length :{Service.length}</h1>
         </div>
     );
 };

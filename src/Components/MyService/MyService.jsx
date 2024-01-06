@@ -26,7 +26,7 @@ const MyService = () => {
     console.log(Service)
     return (
         <div className="mt-20 mb-20">
-           <h1 className="text-3xl font-bold text-orange-600 mt-28 mb-20 text-center">Your Added Service :{Service.length}</h1>
+           <h1 className="text-5xl font-bold text-orange-600 mt-28 mb-20 text-center">Your Added Service :{Service.length}</h1>
             
             
            {Service.length === 0 ? (

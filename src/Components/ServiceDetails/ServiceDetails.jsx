@@ -41,18 +41,19 @@ const ServiceDetails = () => {
             console.log(data);
             if(data.insertedId){
                 Swal.fire({
-                    title: 'Book',
-                    text: 'Booking Successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Ok'
-                  })
+                    position: "top-end",
+                    icon: "success",
+                    title: "Bookings Successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
             }
         })
     }
 
     return (
         <div>
-            <div className="mt-[600px] lg:mt-60 mb-24">
+            <div className="mt-[600px] lg:mt-60 mb-28">
 
 
                 {/* service provider info  */}
